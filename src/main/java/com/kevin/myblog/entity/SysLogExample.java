@@ -235,63 +235,63 @@ public class SysLogExample {
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byIsNull() {
+        public Criteria andCreateByIsNull() {
             addCriterion("create_by is null");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byIsNotNull() {
+        public Criteria andCreateByIsNotNull() {
             addCriterion("create_by is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byEqualTo(Date value) {
-            addCriterion("create_by =", value, "create_by");
+        public Criteria andCreateByEqualTo(Date value) {
+            addCriterion("create_by =", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byNotEqualTo(Date value) {
-            addCriterion("create_by <>", value, "create_by");
+        public Criteria andCreateByNotEqualTo(Date value) {
+            addCriterion("create_by <>", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byGreaterThan(Date value) {
-            addCriterion("create_by >", value, "create_by");
+        public Criteria andCreateByGreaterThan(Date value) {
+            addCriterion("create_by >", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("create_by >=", value, "create_by");
+        public Criteria andCreateByGreaterThanOrEqualTo(Date value) {
+            addCriterion("create_by >=", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byLessThan(Date value) {
-            addCriterion("create_by <", value, "create_by");
+        public Criteria andCreateByLessThan(Date value) {
+            addCriterion("create_by <", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byLessThanOrEqualTo(Date value) {
-            addCriterion("create_by <=", value, "create_by");
+        public Criteria andCreateByLessThanOrEqualTo(Date value) {
+            addCriterion("create_by <=", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byIn(List<Date> values) {
-            addCriterion("create_by in", values, "create_by");
+        public Criteria andCreateByIn(List<Date> values) {
+            addCriterion("create_by in", values, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byNotIn(List<Date> values) {
-            addCriterion("create_by not in", values, "create_by");
+        public Criteria andCreateByNotIn(List<Date> values) {
+            addCriterion("create_by not in", values, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byBetween(Date value1, Date value2) {
-            addCriterion("create_by between", value1, value2, "create_by");
+        public Criteria andCreateByBetween(Date value1, Date value2) {
+            addCriterion("create_by between", value1, value2, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byNotBetween(Date value1, Date value2) {
-            addCriterion("create_by not between", value1, value2, "create_by");
+        public Criteria andCreateByNotBetween(Date value1, Date value2) {
+            addCriterion("create_by not between", value1, value2, "createBy");
             return (Criteria) this;
         }
 
@@ -365,143 +365,143 @@ public class SysLogExample {
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlIsNull() {
+        public Criteria andOperateUrlIsNull() {
             addCriterion("operate_url is null");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlIsNotNull() {
+        public Criteria andOperateUrlIsNotNull() {
             addCriterion("operate_url is not null");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlEqualTo(String value) {
-            addCriterion("operate_url =", value, "operate_url");
+        public Criteria andOperateUrlEqualTo(String value) {
+            addCriterion("operate_url =", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlNotEqualTo(String value) {
-            addCriterion("operate_url <>", value, "operate_url");
+        public Criteria andOperateUrlNotEqualTo(String value) {
+            addCriterion("operate_url <>", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlGreaterThan(String value) {
-            addCriterion("operate_url >", value, "operate_url");
+        public Criteria andOperateUrlGreaterThan(String value) {
+            addCriterion("operate_url >", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlGreaterThanOrEqualTo(String value) {
-            addCriterion("operate_url >=", value, "operate_url");
+        public Criteria andOperateUrlGreaterThanOrEqualTo(String value) {
+            addCriterion("operate_url >=", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlLessThan(String value) {
-            addCriterion("operate_url <", value, "operate_url");
+        public Criteria andOperateUrlLessThan(String value) {
+            addCriterion("operate_url <", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlLessThanOrEqualTo(String value) {
-            addCriterion("operate_url <=", value, "operate_url");
+        public Criteria andOperateUrlLessThanOrEqualTo(String value) {
+            addCriterion("operate_url <=", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlLike(String value) {
-            addCriterion("operate_url like", value, "operate_url");
+        public Criteria andOperateUrlLike(String value) {
+            addCriterion("operate_url like", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlNotLike(String value) {
-            addCriterion("operate_url not like", value, "operate_url");
+        public Criteria andOperateUrlNotLike(String value) {
+            addCriterion("operate_url not like", value, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlIn(List<String> values) {
-            addCriterion("operate_url in", values, "operate_url");
+        public Criteria andOperateUrlIn(List<String> values) {
+            addCriterion("operate_url in", values, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlNotIn(List<String> values) {
-            addCriterion("operate_url not in", values, "operate_url");
+        public Criteria andOperateUrlNotIn(List<String> values) {
+            addCriterion("operate_url not in", values, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlBetween(String value1, String value2) {
-            addCriterion("operate_url between", value1, value2, "operate_url");
+        public Criteria andOperateUrlBetween(String value1, String value2) {
+            addCriterion("operate_url between", value1, value2, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_urlNotBetween(String value1, String value2) {
-            addCriterion("operate_url not between", value1, value2, "operate_url");
+        public Criteria andOperateUrlNotBetween(String value1, String value2) {
+            addCriterion("operate_url not between", value1, value2, "operateUrl");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byIsNull() {
+        public Criteria andOperateByIsNull() {
             addCriterion("operate_by is null");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byIsNotNull() {
+        public Criteria andOperateByIsNotNull() {
             addCriterion("operate_by is not null");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byEqualTo(String value) {
-            addCriterion("operate_by =", value, "operate_by");
+        public Criteria andOperateByEqualTo(String value) {
+            addCriterion("operate_by =", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byNotEqualTo(String value) {
-            addCriterion("operate_by <>", value, "operate_by");
+        public Criteria andOperateByNotEqualTo(String value) {
+            addCriterion("operate_by <>", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byGreaterThan(String value) {
-            addCriterion("operate_by >", value, "operate_by");
+        public Criteria andOperateByGreaterThan(String value) {
+            addCriterion("operate_by >", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byGreaterThanOrEqualTo(String value) {
-            addCriterion("operate_by >=", value, "operate_by");
+        public Criteria andOperateByGreaterThanOrEqualTo(String value) {
+            addCriterion("operate_by >=", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byLessThan(String value) {
-            addCriterion("operate_by <", value, "operate_by");
+        public Criteria andOperateByLessThan(String value) {
+            addCriterion("operate_by <", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byLessThanOrEqualTo(String value) {
-            addCriterion("operate_by <=", value, "operate_by");
+        public Criteria andOperateByLessThanOrEqualTo(String value) {
+            addCriterion("operate_by <=", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byLike(String value) {
-            addCriterion("operate_by like", value, "operate_by");
+        public Criteria andOperateByLike(String value) {
+            addCriterion("operate_by like", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byNotLike(String value) {
-            addCriterion("operate_by not like", value, "operate_by");
+        public Criteria andOperateByNotLike(String value) {
+            addCriterion("operate_by not like", value, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byIn(List<String> values) {
-            addCriterion("operate_by in", values, "operate_by");
+        public Criteria andOperateByIn(List<String> values) {
+            addCriterion("operate_by in", values, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byNotIn(List<String> values) {
-            addCriterion("operate_by not in", values, "operate_by");
+        public Criteria andOperateByNotIn(List<String> values) {
+            addCriterion("operate_by not in", values, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byBetween(String value1, String value2) {
-            addCriterion("operate_by between", value1, value2, "operate_by");
+        public Criteria andOperateByBetween(String value1, String value2) {
+            addCriterion("operate_by between", value1, value2, "operateBy");
             return (Criteria) this;
         }
 
-        public Criteria andOperate_byNotBetween(String value1, String value2) {
-            addCriterion("operate_by not between", value1, value2, "operate_by");
+        public Criteria andOperateByNotBetween(String value1, String value2) {
+            addCriterion("operate_by not between", value1, value2, "operateBy");
             return (Criteria) this;
         }
     }

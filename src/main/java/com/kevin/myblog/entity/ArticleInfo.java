@@ -9,13 +9,13 @@ public class ArticleInfo {
 
     private String summary;
 
-    private Boolean is_top;
+    private Boolean isTop;
 
     private Integer traffic;
 
-    private Date create_by;
+    private Date createBy;
 
-    private Date modified_by;
+    private Date modifiedBy;
 
     public Long getId() {
         return id;
@@ -41,12 +41,12 @@ public class ArticleInfo {
         this.summary = summary == null ? null : summary.trim();
     }
 
-    public Boolean getIs_top() {
-        return is_top;
+    public Boolean getIsTop() {
+        return isTop;
     }
 
-    public void setIs_top(Boolean is_top) {
-        this.is_top = is_top;
+    public void setIsTop(Boolean isTop) {
+        this.isTop = isTop;
     }
 
     public Integer getTraffic() {
@@ -57,19 +57,19 @@ public class ArticleInfo {
         this.traffic = traffic;
     }
 
-    public Date getCreate_by() {
-        return create_by;
+    public Date getCreateBy() {
+        return createBy;
     }
 
-    public void setCreate_by(Date create_by) {
-        this.create_by = create_by;
+    public void setCreateBy(Date createBy) {
+        this.createBy = createBy;
     }
 
-    public Date getModified_by() {
-        return modified_by;
+    public Date getModifiedBy() {
+        return modifiedBy;
     }
 
-    public void setModified_by(Date modified_by) {
-        this.modified_by = modified_by;
+    public void setModifiedBy(Date modifiedBy) {
+        this.modifiedBy = modifiedBy;
     }
 }

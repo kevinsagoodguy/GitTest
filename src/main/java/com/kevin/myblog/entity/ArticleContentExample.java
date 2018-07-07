@@ -165,183 +165,183 @@ public class ArticleContentExample {
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idIsNull() {
+        public Criteria andArticleIdIsNull() {
             addCriterion("article_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idIsNotNull() {
+        public Criteria andArticleIdIsNotNull() {
             addCriterion("article_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idEqualTo(Long value) {
-            addCriterion("article_id =", value, "article_id");
+        public Criteria andArticleIdEqualTo(Long value) {
+            addCriterion("article_id =", value, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idNotEqualTo(Long value) {
-            addCriterion("article_id <>", value, "article_id");
+        public Criteria andArticleIdNotEqualTo(Long value) {
+            addCriterion("article_id <>", value, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idGreaterThan(Long value) {
-            addCriterion("article_id >", value, "article_id");
+        public Criteria andArticleIdGreaterThan(Long value) {
+            addCriterion("article_id >", value, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idGreaterThanOrEqualTo(Long value) {
-            addCriterion("article_id >=", value, "article_id");
+        public Criteria andArticleIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("article_id >=", value, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idLessThan(Long value) {
-            addCriterion("article_id <", value, "article_id");
+        public Criteria andArticleIdLessThan(Long value) {
+            addCriterion("article_id <", value, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idLessThanOrEqualTo(Long value) {
-            addCriterion("article_id <=", value, "article_id");
+        public Criteria andArticleIdLessThanOrEqualTo(Long value) {
+            addCriterion("article_id <=", value, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idIn(List<Long> values) {
-            addCriterion("article_id in", values, "article_id");
+        public Criteria andArticleIdIn(List<Long> values) {
+            addCriterion("article_id in", values, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idNotIn(List<Long> values) {
-            addCriterion("article_id not in", values, "article_id");
+        public Criteria andArticleIdNotIn(List<Long> values) {
+            addCriterion("article_id not in", values, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idBetween(Long value1, Long value2) {
-            addCriterion("article_id between", value1, value2, "article_id");
+        public Criteria andArticleIdBetween(Long value1, Long value2) {
+            addCriterion("article_id between", value1, value2, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andArticle_idNotBetween(Long value1, Long value2) {
-            addCriterion("article_id not between", value1, value2, "article_id");
+        public Criteria andArticleIdNotBetween(Long value1, Long value2) {
+            addCriterion("article_id not between", value1, value2, "articleId");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byIsNull() {
+        public Criteria andCreateByIsNull() {
             addCriterion("create_by is null");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byIsNotNull() {
+        public Criteria andCreateByIsNotNull() {
             addCriterion("create_by is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byEqualTo(Date value) {
-            addCriterion("create_by =", value, "create_by");
+        public Criteria andCreateByEqualTo(Date value) {
+            addCriterion("create_by =", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byNotEqualTo(Date value) {
-            addCriterion("create_by <>", value, "create_by");
+        public Criteria andCreateByNotEqualTo(Date value) {
+            addCriterion("create_by <>", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byGreaterThan(Date value) {
-            addCriterion("create_by >", value, "create_by");
+        public Criteria andCreateByGreaterThan(Date value) {
+            addCriterion("create_by >", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("create_by >=", value, "create_by");
+        public Criteria andCreateByGreaterThanOrEqualTo(Date value) {
+            addCriterion("create_by >=", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byLessThan(Date value) {
-            addCriterion("create_by <", value, "create_by");
+        public Criteria andCreateByLessThan(Date value) {
+            addCriterion("create_by <", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byLessThanOrEqualTo(Date value) {
-            addCriterion("create_by <=", value, "create_by");
+        public Criteria andCreateByLessThanOrEqualTo(Date value) {
+            addCriterion("create_by <=", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byIn(List<Date> values) {
-            addCriterion("create_by in", values, "create_by");
+        public Criteria andCreateByIn(List<Date> values) {
+            addCriterion("create_by in", values, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byNotIn(List<Date> values) {
-            addCriterion("create_by not in", values, "create_by");
+        public Criteria andCreateByNotIn(List<Date> values) {
+            addCriterion("create_by not in", values, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byBetween(Date value1, Date value2) {
-            addCriterion("create_by between", value1, value2, "create_by");
+        public Criteria andCreateByBetween(Date value1, Date value2) {
+            addCriterion("create_by between", value1, value2, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_byNotBetween(Date value1, Date value2) {
-            addCriterion("create_by not between", value1, value2, "create_by");
+        public Criteria andCreateByNotBetween(Date value1, Date value2) {
+            addCriterion("create_by not between", value1, value2, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byIsNull() {
+        public Criteria andModifieldByIsNull() {
             addCriterion("modifield_by is null");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byIsNotNull() {
+        public Criteria andModifieldByIsNotNull() {
             addCriterion("modifield_by is not null");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byEqualTo(Date value) {
-            addCriterion("modifield_by =", value, "modifield_by");
+        public Criteria andModifieldByEqualTo(Date value) {
+            addCriterion("modifield_by =", value, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byNotEqualTo(Date value) {
-            addCriterion("modifield_by <>", value, "modifield_by");
+        public Criteria andModifieldByNotEqualTo(Date value) {
+            addCriterion("modifield_by <>", value, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byGreaterThan(Date value) {
-            addCriterion("modifield_by >", value, "modifield_by");
+        public Criteria andModifieldByGreaterThan(Date value) {
+            addCriterion("modifield_by >", value, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byGreaterThanOrEqualTo(Date value) {
-            addCriterion("modifield_by >=", value, "modifield_by");
+        public Criteria andModifieldByGreaterThanOrEqualTo(Date value) {
+            addCriterion("modifield_by >=", value, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byLessThan(Date value) {
-            addCriterion("modifield_by <", value, "modifield_by");
+        public Criteria andModifieldByLessThan(Date value) {
+            addCriterion("modifield_by <", value, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byLessThanOrEqualTo(Date value) {
-            addCriterion("modifield_by <=", value, "modifield_by");
+        public Criteria andModifieldByLessThanOrEqualTo(Date value) {
+            addCriterion("modifield_by <=", value, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byIn(List<Date> values) {
-            addCriterion("modifield_by in", values, "modifield_by");
+        public Criteria andModifieldByIn(List<Date> values) {
+            addCriterion("modifield_by in", values, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byNotIn(List<Date> values) {
-            addCriterion("modifield_by not in", values, "modifield_by");
+        public Criteria andModifieldByNotIn(List<Date> values) {
+            addCriterion("modifield_by not in", values, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byBetween(Date value1, Date value2) {
-            addCriterion("modifield_by between", value1, value2, "modifield_by");
+        public Criteria andModifieldByBetween(Date value1, Date value2) {
+            addCriterion("modifield_by between", value1, value2, "modifieldBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifield_byNotBetween(Date value1, Date value2) {
-            addCriterion("modifield_by not between", value1, value2, "modifield_by");
+        public Criteria andModifieldByNotBetween(Date value1, Date value2) {
+            addCriterion("modifield_by not between", value1, value2, "modifieldBy");
             return (Criteria) this;
         }
     }

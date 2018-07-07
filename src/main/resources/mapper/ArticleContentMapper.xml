@@ -3,9 +3,9 @@
 <mapper namespace="com.kevin.myblog.mapper.ArticleContentMapper">
   <resultMap id="BaseResultMap" type="com.kevin.myblog.entity.ArticleContent">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="article_id" jdbcType="BIGINT" property="article_id" />
-    <result column="create_by" jdbcType="TIMESTAMP" property="create_by" />
-    <result column="modifield_by" jdbcType="TIMESTAMP" property="modifield_by" />
+    <result column="article_id" jdbcType="BIGINT" property="articleId" />
+    <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
+    <result column="modifield_by" jdbcType="TIMESTAMP" property="modifieldBy" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.kevin.myblog.entity.ArticleContent">
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
@@ -92,19 +92,19 @@
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.kevin.myblog.entity.ArticleContent" useGeneratedKeys="true">
     insert into tbl_article_content (article_id, create_by, modifield_by, 
       content)
-    values (#{article_id,jdbcType=BIGINT}, #{create_by,jdbcType=TIMESTAMP}, #{modifield_by,jdbcType=TIMESTAMP}, 
+    values (#{articleId,jdbcType=BIGINT}, #{createBy,jdbcType=TIMESTAMP}, #{modifieldBy,jdbcType=TIMESTAMP}, 
       #{content,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.kevin.myblog.entity.ArticleContent" useGeneratedKeys="true">
     insert into tbl_article_content
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="article_id != null">
+      <if test="articleId != null">
         article_id,
       </if>
-      <if test="create_by != null">
+      <if test="createBy != null">
         create_by,
       </if>
-      <if test="modifield_by != null">
+      <if test="modifieldBy != null">
         modifield_by,
       </if>
       <if test="content != null">
@@ -112,14 +112,14 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="article_id != null">
-        #{article_id,jdbcType=BIGINT},
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
       </if>
-      <if test="create_by != null">
-        #{create_by,jdbcType=TIMESTAMP},
+      <if test="createBy != null">
+        #{createBy,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifield_by != null">
-        #{modifield_by,jdbcType=TIMESTAMP},
+      <if test="modifieldBy != null">
+        #{modifieldBy,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null">
         #{content,jdbcType=LONGVARCHAR},
@@ -129,14 +129,14 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.kevin.myblog.entity.ArticleContent">
     update tbl_article_content
     <set>
-      <if test="article_id != null">
-        article_id = #{article_id,jdbcType=BIGINT},
+      <if test="articleId != null">
+        article_id = #{articleId,jdbcType=BIGINT},
       </if>
-      <if test="create_by != null">
-        create_by = #{create_by,jdbcType=TIMESTAMP},
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifield_by != null">
-        modifield_by = #{modifield_by,jdbcType=TIMESTAMP},
+      <if test="modifieldBy != null">
+        modifield_by = #{modifieldBy,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null">
         content = #{content,jdbcType=LONGVARCHAR},
@@ -146,17 +146,17 @@
   </update>
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.kevin.myblog.entity.ArticleContent">
     update tbl_article_content
-    set article_id = #{article_id,jdbcType=BIGINT},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
-      modifield_by = #{modifield_by,jdbcType=TIMESTAMP},
+    set article_id = #{articleId,jdbcType=BIGINT},
+      create_by = #{createBy,jdbcType=TIMESTAMP},
+      modifield_by = #{modifieldBy,jdbcType=TIMESTAMP},
       content = #{content,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.kevin.myblog.entity.ArticleContent">
     update tbl_article_content
-    set article_id = #{article_id,jdbcType=BIGINT},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
-      modifield_by = #{modifield_by,jdbcType=TIMESTAMP}
+    set article_id = #{articleId,jdbcType=BIGINT},
+      create_by = #{createBy,jdbcType=TIMESTAMP},
+      modifield_by = #{modifieldBy,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

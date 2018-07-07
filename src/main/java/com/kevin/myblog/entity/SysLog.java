@@ -7,13 +7,13 @@ public class SysLog {
 
     private String ip;
 
-    private Date create_by;
+    private Date createBy;
 
     private String remark;
 
-    private String operate_url;
+    private String operateUrl;
 
-    private String operate_by;
+    private String operateBy;
 
     public Long getId() {
         return id;
@@ -31,12 +31,12 @@ public class SysLog {
         this.ip = ip == null ? null : ip.trim();
     }
 
-    public Date getCreate_by() {
-        return create_by;
+    public Date getCreateBy() {
+        return createBy;
     }
 
-    public void setCreate_by(Date create_by) {
-        this.create_by = create_by;
+    public void setCreateBy(Date createBy) {
+        this.createBy = createBy;
     }
 
     public String getRemark() {
@@ -47,19 +47,19 @@ public class SysLog {
         this.remark = remark == null ? null : remark.trim();
     }
 
-    public String getOperate_url() {
-        return operate_url;
+    public String getOperateUrl() {
+        return operateUrl;
     }
 
-    public void setOperate_url(String operate_url) {
-        this.operate_url = operate_url == null ? null : operate_url.trim();
+    public void setOperateUrl(String operateUrl) {
+        this.operateUrl = operateUrl == null ? null : operateUrl.trim();
     }
 
-    public String getOperate_by() {
-        return operate_by;
+    public String getOperateBy() {
+        return operateBy;
     }
 
-    public void setOperate_by(String operate_by) {
-        this.operate_by = operate_by == null ? null : operate_by.trim();
+    public void setOperateBy(String operateBy) {
+        this.operateBy = operateBy == null ? null : operateBy.trim();
     }
 }

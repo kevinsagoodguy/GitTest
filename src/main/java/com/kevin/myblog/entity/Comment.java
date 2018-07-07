@@ -2,12 +2,12 @@ package com.kevin.myblog.entity;
 
 import java.util.Date;
 
-public class Message {
+public class Comment {
     private Long id;
 
     private String content;
 
-    private Date create_by;
+    private Date createBy;
 
     private String email;
 
@@ -15,7 +15,7 @@ public class Message {
 
     private String ip;
 
-    private Boolean is_effective;
+    private Boolean isEffective;
 
     public Long getId() {
         return id;
@@ -33,12 +33,12 @@ public class Message {
         this.content = content == null ? null : content.trim();
     }
 
-    public Date getCreate_by() {
-        return create_by;
+    public Date getCreateBy() {
+        return createBy;
     }
 
-    public void setCreate_by(Date create_by) {
-        this.create_by = create_by;
+    public void setCreateBy(Date createBy) {
+        this.createBy = createBy;
     }
 
     public String getEmail() {
@@ -65,11 +65,11 @@ public class Message {
         this.ip = ip == null ? null : ip.trim();
     }
 
-    public Boolean getIs_effective() {
-        return is_effective;
+    public Boolean getIsEffective() {
+        return isEffective;
     }
 
-    public void setIs_effective(Boolean is_effective) {
-        this.is_effective = is_effective;
+    public void setIsEffective(Boolean isEffective) {
+        this.isEffective = isEffective;
     }
 }

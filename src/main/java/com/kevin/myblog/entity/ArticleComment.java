@@ -2,10 +2,12 @@ package com.kevin.myblog.entity;
 
 import java.util.Date;
 
-public class SysView {
+public class ArticleComment {
     private Long id;
 
-    private String ip;
+    private Long articleId;
+
+    private Long commentId;
 
     private Date createBy;
 
@@ -17,12 +19,20 @@ public class SysView {
         this.id = id;
     }
 
-    public String getIp() {
-        return ip;
+    public Long getArticleId() {
+        return articleId;
     }
 
-    public void setIp(String ip) {
-        this.ip = ip == null ? null : ip.trim();
+    public void setArticleId(Long articleId) {
+        this.articleId = articleId;
+    }
+
+    public Long getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(Long commentId) {
+        this.commentId = commentId;
     }
 
     public Date getCreateBy() {

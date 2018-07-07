@@ -4,10 +4,10 @@
   <resultMap id="BaseResultMap" type="com.kevin.myblog.entity.SysLog">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="ip" jdbcType="VARCHAR" property="ip" />
-    <result column="create_by" jdbcType="TIMESTAMP" property="create_by" />
+    <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
-    <result column="operate_url" jdbcType="VARCHAR" property="operate_url" />
-    <result column="operate_by" jdbcType="VARCHAR" property="operate_by" />
+    <result column="operate_url" jdbcType="VARCHAR" property="operateUrl" />
+    <result column="operate_by" jdbcType="VARCHAR" property="operateBy" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -69,8 +69,8 @@
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.kevin.myblog.entity.SysLog" useGeneratedKeys="true">
     insert into sys_log (ip, create_by, remark, 
       operate_url, operate_by)
-    values (#{ip,jdbcType=VARCHAR}, #{create_by,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, 
-      #{operate_url,jdbcType=VARCHAR}, #{operate_by,jdbcType=VARCHAR})
+    values (#{ip,jdbcType=VARCHAR}, #{createBy,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, 
+      #{operateUrl,jdbcType=VARCHAR}, #{operateBy,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.kevin.myblog.entity.SysLog" useGeneratedKeys="true">
     insert into sys_log
@@ -78,16 +78,16 @@
       <if test="ip != null">
         ip,
       </if>
-      <if test="create_by != null">
+      <if test="createBy != null">
         create_by,
       </if>
       <if test="remark != null">
         remark,
       </if>
-      <if test="operate_url != null">
+      <if test="operateUrl != null">
         operate_url,
       </if>
-      <if test="operate_by != null">
+      <if test="operateBy != null">
         operate_by,
       </if>
     </trim>
@@ -95,17 +95,17 @@
       <if test="ip != null">
         #{ip,jdbcType=VARCHAR},
       </if>
-      <if test="create_by != null">
-        #{create_by,jdbcType=TIMESTAMP},
+      <if test="createBy != null">
+        #{createBy,jdbcType=TIMESTAMP},
       </if>
       <if test="remark != null">
         #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="operate_url != null">
-        #{operate_url,jdbcType=VARCHAR},
+      <if test="operateUrl != null">
+        #{operateUrl,jdbcType=VARCHAR},
       </if>
-      <if test="operate_by != null">
-        #{operate_by,jdbcType=VARCHAR},
+      <if test="operateBy != null">
+        #{operateBy,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -115,17 +115,17 @@
       <if test="ip != null">
         ip = #{ip,jdbcType=VARCHAR},
       </if>
-      <if test="create_by != null">
-        create_by = #{create_by,jdbcType=TIMESTAMP},
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=TIMESTAMP},
       </if>
       <if test="remark != null">
         remark = #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="operate_url != null">
-        operate_url = #{operate_url,jdbcType=VARCHAR},
+      <if test="operateUrl != null">
+        operate_url = #{operateUrl,jdbcType=VARCHAR},
       </if>
-      <if test="operate_by != null">
-        operate_by = #{operate_by,jdbcType=VARCHAR},
+      <if test="operateBy != null">
+        operate_by = #{operateBy,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -133,10 +133,10 @@
   <update id="updateByPrimaryKey" parameterType="com.kevin.myblog.entity.SysLog">
     update sys_log
     set ip = #{ip,jdbcType=VARCHAR},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
+      create_by = #{createBy,jdbcType=TIMESTAMP},
       remark = #{remark,jdbcType=VARCHAR},
-      operate_url = #{operate_url,jdbcType=VARCHAR},
-      operate_by = #{operate_by,jdbcType=VARCHAR}
+      operate_url = #{operateUrl,jdbcType=VARCHAR},
+      operate_by = #{operateBy,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

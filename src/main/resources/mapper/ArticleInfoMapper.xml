@@ -5,10 +5,10 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="summary" jdbcType="VARCHAR" property="summary" />
-    <result column="is_top" jdbcType="BIT" property="is_top" />
+    <result column="is_top" jdbcType="BIT" property="isTop" />
     <result column="traffic" jdbcType="INTEGER" property="traffic" />
-    <result column="create_by" jdbcType="TIMESTAMP" property="create_by" />
-    <result column="modified_by" jdbcType="TIMESTAMP" property="modified_by" />
+    <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
+    <result column="modified_by" jdbcType="TIMESTAMP" property="modifiedBy" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -71,8 +71,8 @@
     insert into tbl_article_info (title, summary, is_top, 
       traffic, create_by, modified_by
       )
-    values (#{title,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, #{is_top,jdbcType=BIT}, 
-      #{traffic,jdbcType=INTEGER}, #{create_by,jdbcType=TIMESTAMP}, #{modified_by,jdbcType=TIMESTAMP}
+    values (#{title,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, #{isTop,jdbcType=BIT}, 
+      #{traffic,jdbcType=INTEGER}, #{createBy,jdbcType=TIMESTAMP}, #{modifiedBy,jdbcType=TIMESTAMP}
       )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.kevin.myblog.entity.ArticleInfo" useGeneratedKeys="true">
@@ -84,16 +84,16 @@
       <if test="summary != null">
         summary,
       </if>
-      <if test="is_top != null">
+      <if test="isTop != null">
         is_top,
       </if>
       <if test="traffic != null">
         traffic,
       </if>
-      <if test="create_by != null">
+      <if test="createBy != null">
         create_by,
       </if>
-      <if test="modified_by != null">
+      <if test="modifiedBy != null">
         modified_by,
       </if>
     </trim>
@@ -104,17 +104,17 @@
       <if test="summary != null">
         #{summary,jdbcType=VARCHAR},
       </if>
-      <if test="is_top != null">
-        #{is_top,jdbcType=BIT},
+      <if test="isTop != null">
+        #{isTop,jdbcType=BIT},
       </if>
       <if test="traffic != null">
         #{traffic,jdbcType=INTEGER},
       </if>
-      <if test="create_by != null">
-        #{create_by,jdbcType=TIMESTAMP},
+      <if test="createBy != null">
+        #{createBy,jdbcType=TIMESTAMP},
       </if>
-      <if test="modified_by != null">
-        #{modified_by,jdbcType=TIMESTAMP},
+      <if test="modifiedBy != null">
+        #{modifiedBy,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -127,17 +127,17 @@
       <if test="summary != null">
         summary = #{summary,jdbcType=VARCHAR},
       </if>
-      <if test="is_top != null">
-        is_top = #{is_top,jdbcType=BIT},
+      <if test="isTop != null">
+        is_top = #{isTop,jdbcType=BIT},
       </if>
       <if test="traffic != null">
         traffic = #{traffic,jdbcType=INTEGER},
       </if>
-      <if test="create_by != null">
-        create_by = #{create_by,jdbcType=TIMESTAMP},
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=TIMESTAMP},
       </if>
-      <if test="modified_by != null">
-        modified_by = #{modified_by,jdbcType=TIMESTAMP},
+      <if test="modifiedBy != null">
+        modified_by = #{modifiedBy,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -146,10 +146,10 @@
     update tbl_article_info
     set title = #{title,jdbcType=VARCHAR},
       summary = #{summary,jdbcType=VARCHAR},
-      is_top = #{is_top,jdbcType=BIT},
+      is_top = #{isTop,jdbcType=BIT},
       traffic = #{traffic,jdbcType=INTEGER},
-      create_by = #{create_by,jdbcType=TIMESTAMP},
-      modified_by = #{modified_by,jdbcType=TIMESTAMP}
+      create_by = #{createBy,jdbcType=TIMESTAMP},
+      modified_by = #{modifiedBy,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

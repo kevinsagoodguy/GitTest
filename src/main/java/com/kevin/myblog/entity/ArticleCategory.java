@@ -2,16 +2,16 @@ package com.kevin.myblog.entity;
 
 import java.util.Date;
 
-public class ArticleContent {
+public class ArticleCategory {
     private Long id;
+
+    private Long categoryId;
 
     private Long articleId;
 
     private Date createBy;
 
-    private Date modifieldBy;
-
-    private String content;
+    private Date modifiedBy;
 
     public Long getId() {
         return id;
@@ -19,6 +19,14 @@ public class ArticleContent {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
     }
 
     public Long getArticleId() {
@@ -37,19 +45,11 @@ public class ArticleContent {
         this.createBy = createBy;
     }
 
-    public Date getModifieldBy() {
-        return modifieldBy;
+    public Date getModifiedBy() {
+        return modifiedBy;
     }
 
-    public void setModifieldBy(Date modifieldBy) {
-        this.modifieldBy = modifieldBy;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+    public void setModifiedBy(Date modifiedBy) {
+        this.modifiedBy = modifiedBy;
     }
 }
